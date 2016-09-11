@@ -11,10 +11,15 @@ Rails.application.routes.draw do
 
   get "/login", to: "sessions#new", as: "new_session"
   get "/logout", to: "sessions#destroy"
-  post "/sessions", to: "sessions#create", as: "create_session" 
+  post "/sessions", to: "sessions#create", as: "create_session"
 
 
-
+  get "/Listings/new", to: "Listings#new", as: "new_listing"
+  post "/Listings", to: "Listings#create"
+  get "/Listings/:id", to: "Listings#show", as: "listing"
+  get "/Listings/:id/edit", to: "Listings#edit", as: "edit_listing"
+  patch "/Listings/:id", to: "Listings#update"
+  delete "/Listings/:id", to: "Listings#destroy", as: "destroy_listing"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
