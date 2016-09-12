@@ -42,4 +42,25 @@ class ListingsController < ApplicationController
       auth_fail("update other user's listing!", listing_path)
     end
   end
+
+  def destroy
+    set_listing
+    if auth_route(@listing.user)
+      @user = @listing.user
+      @listing.destroy
+      flash[:success] = "Your listing \"#{@listing.title}\" has been deleted"
+      redirect_to "/"
+    else
+      auth_fail("delete other user's listings", listing_path)
+    end
+  end
+
+private
+    def listing_params
+      params.require(:listing).permit(:title, :content, :image, :location)
+    end
+
+    def set_listing
+      @listing = Listing.find(params[:id])
+    end
 end
