@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-
+  include AuthHelper
+  
   def new
     @user = User.new
     render :new
@@ -47,7 +48,7 @@ class UsersController < ApplicationController
       auth_fail("Your account could not be deactivated.", user_path(@user))
     end
   end
-  
+
   private
 
   def user_params
