@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     set_user
     if @user.save
       login(@user)
-      flash[:success] = "User account created! Welcome to NapZZZ"
+      flash[:success] = "User account created. Welcome to NapZZZ!"
       redirect_to "/"
     else
       flash[:notice] = "There was a problem creating your account. #{@user.errors.full_messages.join(', ')}."
