@@ -1,5 +1,7 @@
 class ListingsController < ApplicationController
-
+  include AuthHelper
+  include ApplicationHelper
+  
   def index
     @listings = Listing.all
   end

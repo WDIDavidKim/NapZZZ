@@ -17,6 +17,37 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user = User.find(params[:id])
+    auth_fail("edit other user's information!", @user) if !auth_route(@user)
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if auth_route(@user)
+      if @user.update(user_params)
+        flash[:success] = "Your information was successfully updated"
+        redirect_to "/"
+      else
+        render :edit
+      end
+    else
+      auth_fail("update other people's information!", @user)
+    end
+  end
+
+  def destroy
+    @user = User.find(params[:id])
+    if auth_route(@user)
+      Listing.delete.all(:user => @user.id)
+      @user.destory
+      flash[:success] = "Your account has been deactivated"
+      redirect_to "/"
+    else
+      auth_fail("Your account could not be deactivated.", user_path(@user))
+    end
+  end
+  
   private
 
   def user_params
