@@ -14,6 +14,6 @@ module ApplicationHelper
 
   def auth_fail
     flash[:error] = "You cannot edit other people's posts!"
-    redirect_to post_path
+    redirect_to "/"
   end
 end
