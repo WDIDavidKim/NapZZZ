@@ -1,7 +1,7 @@
 class ListingsController < ApplicationController
   include AuthHelper
   include ApplicationHelper
-  
+
   def index
     @listings = Listing.all
   end
@@ -31,6 +31,10 @@ class ListingsController < ApplicationController
     auth_fail("edit other user's listing!", @listing) if !auth_route(@listing.user)
   end
 
+  def show
+    @listing = Listing.find(params[:id])
+  end
+  
   def update
     set_article
     if auth_route(@listing.user)

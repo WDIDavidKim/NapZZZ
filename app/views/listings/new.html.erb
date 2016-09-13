@@ -1,0 +1,12 @@
+<br></br>
+<div class = "col-md-4 col-md-offset-4">
+  <div class = "new_form">
+    <%= bootstrap_form_for @listing do |f| %>
+      <%= f.text_field :title, placeholder: 'Title' %>
+      <%= f.text_field :content, placeholder: 'Content' %>
+      <%= f.text_field :location, placeholder: 'Address' %>
+      <%= f.uploadcare_uploader :image, :data => {:images_only => true, :crop => "500x500 minimum", :image_shrink => "500x500", :clearable => true } %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
