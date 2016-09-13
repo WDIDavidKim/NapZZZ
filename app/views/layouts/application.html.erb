@@ -24,7 +24,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand" href="/" style="color: #ff8080">napzzz</a>
+          <a class="navbar-brand" href="/" style="color: #ff8080;">napzzz</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <form class="navbar-form navbar-left">
@@ -41,7 +41,7 @@
           <% else %>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> User Profile <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="<%= current_user.profile_photo %>" id="navpic"> <%= current_user.first_name %><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="/listings/new">Post a listing</a></li>
                   <li><a href="#">Edit Profile</a></li>

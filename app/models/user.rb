@@ -8,4 +8,11 @@ class User < ApplicationRecord
   EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   has_many :listings
+
+  private
+  
+  def self.confirm(params)
+    @user = User.where("email ILIKE ?", params[:email]).first
+    @user.try(:authenticate, params[:password])
+  end
 end
