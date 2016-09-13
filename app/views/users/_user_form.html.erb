@@ -6,11 +6,13 @@
       <%= f.text_field :last_name, placeholder: 'Last Name' %>
       <%= f.email_field :email, placeholder: 'Email' %>
       <%= f.password_field :password, placeholder: 'Password' %><br>
-      <%= f.uploadcare_uploader :profile_photo, :data => {:images_only => true, :crop => "500x500 minimum", :image_shrink => "500x500", :clearable => true } %>
-      <%= f.submit %>
-    <% end %>
+      <%= f.uploadcare_uploader :profile_photo, :data => {:images_only => true, :crop => "500x500 minimum", :image_shrink => "500x500", :clearable => true } %><br></br>
+      <br>
+      <div class=submitandcancelbutton>
+      <%= f.submit :class=>"btn btn-success btn-md"%><span></span>
+      <% end %>
+      </div>
   </div>
   <br>
-  Already have an account? Please
-  <%= link_to "login!", new_session_path %>
+  <p>Already have an account? Please <%= link_to "login!", new_session_path %></p>
 </div>

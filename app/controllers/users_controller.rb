@@ -18,6 +18,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @user = User.find(params[:id])
+  end
+  
   def edit
     @user = User.find(params[:id])
     auth_fail("edit other user's information!", @user) if !auth_route(@user)

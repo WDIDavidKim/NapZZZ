@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get "/users/new", to: "users#new", as: "new_user"
   post "/users", to: "users#create"
+  get "/users/:id", to: "users#show", as: "user"
   get "/users/:id/edit", to: "users#edit", as: "edit_user"
   patch "/users/:id", to: "users#update"
   delete "/users/:id", to: "users#destroy", as: "destroy_user"
@@ -16,7 +17,7 @@ Rails.application.routes.draw do
   post "/listings", to: "listings#create"
   get "/listings/:id", to: "listings#show", as: "listing"
   get "/listings/:id/edit", to: "listings#edit", as: "edit_listing"
-  patch "/listings/:id", to: "listings#update"
+  patch "/listings/:id", to: "listings#update", as: "update_user"
   delete "/listings/:id", to: "listings#destroy", as: "destroy_listing"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
