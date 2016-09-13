@@ -1,5 +1,3 @@
-User.destroy_all
-Listing.destroy_all
 
 USERS = [
   {
