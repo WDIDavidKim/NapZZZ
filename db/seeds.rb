@@ -41,59 +41,59 @@ LISTINGS = [
     user_id: 1
   },
   {
-    title: "Welcome to GA!",
-    content: "This place is awesome! Really comfy pods and couches in the main area to sleep on.",
+    title: "Modern red couches",
+    content: "Very red very comfortable couches.",
     image: "https://ucarecdn.com/f276e51c-4244-4929-a14e-ce042a9f433a/",
-    location: "General Assembly 225 Bush Street",
+    location: "1234 Red Street",
     user_id: 2
   },
   {
-    title: "Welcome to GA!",
-    content: "This place is awesome! Really comfy pods and couches in the main area to sleep on.",
+    title: "Simple and Clean",
+    content: "Modern grey sofas are here to relax anyone.",
     image: "https://ucarecdn.com/de60390c-3ea0-4f8c-bb0a-183f72f56ba2/",
-    location: "General Assembly 225 Bush Street",
+    location: "330 Grey Court",
     user_id: 3
   },
   {
-    title: "Welcome to GA!",
-    content: "This place is awesome! Really comfy pods and couches in the main area to sleep on.",
+    title: "Similar to the grey and just as comfortable",
+    content: "Looks quite familiar.",
     image: "https://ucarecdn.com/a917eeb1-78d4-4244-a394-e6096534d58d/",
-    location: "General Assembly 225 Bush Street",
+    location: "444 Another Grey Street",
     user_id: 4
   },
   {
-    title: "Welcome to GA!",
-    content: "This place is awesome! Really comfy pods and couches in the main area to sleep on.",
+    title: "Feng Shui",
+    content: "Can you feel the calmness in this place?",
     image: "https://ucarecdn.com/dc106fb9-3308-49ee-8e85-60a88be98fb9/",
-    location: "General Assembly 225 Bush Street",
+    location: "999 Harmony Ave",
     user_id: 1
   },
   {
-    title: "Welcome to GA!",
-    content: "This place is awesome! Really comfy pods and couches in the main area to sleep on.",
+    title: "The Big U",
+    content: "Gotta sleep on this horseshoe.",
     image: "https://ucarecdn.com/c2cc44d3-95ef-4bdf-b465-4ed846e9440a/",
-    location: "General Assembly 225 Bush Street",
+    location: "55 Ranch Road",
     user_id: 2
   },
   {
-    title: "Welcome to GA!",
-    content: "This place is awesome! Really comfy pods and couches in the main area to sleep on.",
+    title: "Wood Planks",
+    content: "Almost reminds me of a sauna.",
     image: "https://ucarecdn.com/95c7faba-6e61-42a0-b49f-7d6b7d7004e6/",
-    location: "General Assembly 225 Bush Street",
+    location: "987 Steam Blvd",
     user_id: 3
   },
   {
-    title: "Welcome to GA!",
-    content: "This place is awesome! Really comfy pods and couches in the main area to sleep on.",
+    title: "Tube TV",
+    content: "Feels like being back home.",
     image: "https://ucarecdn.com/4229794a-046f-485b-998c-0a0171d213de/",
-    location: "General Assembly 225 Bush Street",
+    location: "567 Memory Lane",
     user_id: 4
   },
   {
-    title: "Welcome to GA!",
-    content: "This place is awesome! Really comfy pods and couches in the main area to sleep on.",
+    title: "Really Modern",
+    content: "Hopefully the red walls are soothing for some folks.",
     image: "https://ucarecdn.com/019ea130-a567-480f-87eb-76adac22e647/",
-    location: "General Assembly 225 Bush Street",
+    location: "415 Lottared Blvd",
     user_id: 1
   }
 ]
