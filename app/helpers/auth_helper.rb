@@ -6,6 +6,6 @@ module AuthHelper
 
   def auth_fail(reason_for_failure, redirect_path)
     flash[:error] = "You can't " + reason_for_failure
-    redirect_to redirect_path
+    redirect_to root_path
   end
 end
