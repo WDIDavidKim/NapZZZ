@@ -10,11 +10,13 @@
 <div class='container'>
   <div class='row'>
     <% listing.each do |listing| %>
+    <%= link_to listing_path(listing) do %>
       <div class='col-md-4'>
         <%= image_tag(listing.image, class: "img-responsive") %>
         <br>
+        <% end %>
       </div>
-    <% end %>
+      <% end %>
   </div>
 </div>
 <% end %>

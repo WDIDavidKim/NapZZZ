@@ -34,7 +34,7 @@ class ListingsController < ApplicationController
   def show
     @listing = Listing.find(params[:id])
   end
-  
+
   def update
     set_article
     if auth_route(@listing.user)
