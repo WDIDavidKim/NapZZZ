@@ -1,3 +1,11 @@
-<div class="panel-image"><br><br>
-  <img class="img-responsive img-rounded" <img src="<%= @listing.image %>" data-toggle="modal" data-target="#myModal" style="width:auto; height:350px; margin: 0 auto; margin-top: -20px; cursor: pointer;" >
+<img src="<%= @listing.image %>" style="width: 100%; height: 70vh;"><br></br>
+<div class="row">
+  <div class="col-md-3 offset-md-4"></div>
+  <div class="col-md-3 offset-md-4"><img src="<%= @listing.user.profile_photo %>" id=listinguserinfo>
+    <h4>Posted by <%= @listing.user.first_name %></h4>
+    <h6><%= @listing.title %></h6>
+    <h6><%= @listing.content %></h6>
+    <h6><%= @listing.location %></h6>
+  </div>
 </div>
+<br></br>
