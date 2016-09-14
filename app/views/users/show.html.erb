@@ -2,23 +2,28 @@
 <div class="text-center">
   <img src="<%= current_user.profile_photo %>" class="avatar img-circle img-thumbnail" alt="avatar" style="height:40vh">
   <h3><%= current_user.first_name %></h3>
+  <h4>Date Joined: <%= @user.created_at.localtime.strftime("%B #{@user.created_at.day.ordinalize}, %Y") %></h4>
 </div>
 <br></br>
-<h2>All my listings</h2>
+<h2>My listings</h2>
 <br></br>
 <% @user.listings.each do |listing| %>
 <div class='container'>
   <div class='row'>
     <%= link_to listing_path(listing) do %>
-      <div class='col-md-4' id='userlistings'>
-        <img src="<%= listing.image %>" style="height:60vh; width:90vw;">
-        <br></br>
-        <% end %>
-        <div class='userlistinginfo'>
-          <p style="font-size:25px;"><%= listing.title %></p>
-          <p><%= listing.content %></p>
+    <div class='col-md-4' id='userlistings'>
+      <img src="<%= listing.image %>" style="height:60vh; width:90vw;">
+      <br></br>
+      <% end %>
+      <div class='userlistinginfo'>
+        <p style="font-size:25px;"><%= listing.title %></p>
+        <p><%= listing.content %></p>
+        <div class="buttonrow">
+          <%= link_to "Edit Listing", edit_listing_path(@listing), method: :get, :class=>"ruby-link btn btn-info btn-primary btn-sm inline" %>
+          <%= link_to "Delete Listing", destroy_listing_path(@listing), method: :delete, :class=>"ruby-link btn btn-info btn-danger btn-sm inline" %>
         </div>
       </div>
+    </div>
   </div>
   <hr>
 </div>
