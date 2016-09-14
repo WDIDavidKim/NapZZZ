@@ -15,7 +15,7 @@
     <script charset="utf-8" src="//ucarecdn.com/widget/2.10.0/uploadcare/uploadcare.full.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-default" style="margin-bottom:0;">
+    <nav class="navbar navbar-default" style="margin-bottom:0; height:12vh;">
       <div id="flash_messages">
         <%= flash_messages %>
       </div>
@@ -24,22 +24,15 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand" href="/" style="color: #ff8080;">napzzz</a>
+          <a class="navbar-brand"  href="/" style="color: #ff8080; font-family: 'Muli', sans-serif;"><img src="http://i.imgur.com/hQjLfga.png" style="height:5vh; width:8vh;">napzzz</a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
           <% if current_user == nil %>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" style="font-family: 'Muli', sans-serif;">
               <li><a href="/users/new">Sign Up</a></li>
               <li><a href="/login">Login</a></li>
             </ul>
           <% else %>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" style="font-family: 'Muli', sans-serif;">
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="<%= current_user.profile_photo %>" id="navpic"> <%= current_user.first_name %><span class="caret"></span></a>
                 <ul class="dropdown-menu">
