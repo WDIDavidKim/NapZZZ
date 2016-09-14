@@ -19,8 +19,8 @@
         <p style="font-size:25px;"><%= listing.title %></p>
         <p><%= listing.content %></p>
         <div class="buttonrow">
-          <%= link_to "Edit Listing", edit_listing_path(@listing), method: :get, :class=>"ruby-link btn btn-info btn-primary btn-sm inline" %>
-          <%= link_to "Delete Listing", destroy_listing_path(@listing), method: :delete, :class=>"ruby-link btn btn-info btn-danger btn-sm inline" %>
+          <%= link_to "Edit Listing", edit_listing_path(listing), method: :get, :class=>"ruby-link btn btn-info btn-sm inline" %>
+          <%= link_to "Delete Listing", destroy_listing_path(listing), method: :delete, :class=>"ruby-link btn btn-danger btn-sm inline" %>
         </div>
       </div>
     </div>

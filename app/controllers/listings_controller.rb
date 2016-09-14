@@ -36,7 +36,7 @@ class ListingsController < ApplicationController
   end
 
   def update
-    set_article
+    set_listing
     if auth_route(@listing.user)
       if @listing.update(listing_params)
         flash[:success] = "#{@listing.title} was updated!"

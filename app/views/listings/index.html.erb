@@ -11,11 +11,11 @@
   <div class='row'>
     <% listing.each do |listing| %>
     <%= link_to listing_path(listing) do %>
-      <div class='col-md-4' id='portfolio'>
-        <%= image_tag(listing.image, class: "img-responsive", style:"height:30vh; width:50vh;") %>
-        <% end %>
-      </div>
+    <div class='col-md-4' id='portfolio'>
+      <%= image_tag(listing.image, class: "img-responsive", style:"height:30vh; width:50vh;") %>
       <% end %>
+    </div>
+    <% end %>
   </div>
 </div>
 <% end %>
