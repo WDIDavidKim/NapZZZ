@@ -19,7 +19,6 @@ $(document).on('turbolinks:load', function() {
   setTimeout(function() {
     $('#flash_messages').slideUp();
   }, 3000);
-});
 
 $.getScript('http://arshaw.com/js/fullcalendar-1.6.4/fullcalendar/fullcalendar.min.js', function() {
 
@@ -73,4 +72,5 @@ $.getScript('http://arshaw.com/js/fullcalendar-1.6.4/fullcalendar/fullcalendar.m
             url: 'http://google.com/'
         }]
     });
+});
 });
