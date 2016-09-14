@@ -9,8 +9,11 @@
   </div>
 </div>
 <br></br>
-
-
+<% if current_user %>
+<div class="reservationlink">
+  <%= link_to "Make a Reservation", new_reservation_path %>
+<% end %>
+</div>
 <div class="container">
     <hr>
     <div id="calendar"></div>

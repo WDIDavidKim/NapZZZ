@@ -20,5 +20,9 @@ Rails.application.routes.draw do
   patch "/listings/:id", to: "listings#update", as: "update_user"
   delete "/listings/:id", to: "listings#destroy", as: "destroy_listing"
 
+  get "/reservations/new", to: "reservations#new", as: "new_reservation"
+  post "/reservations", to: "reservations#create"
+  get "/listings/:id/users/:id/reservations/:id", to: "reservations#show", as: "reservation"
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
