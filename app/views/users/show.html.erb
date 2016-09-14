@@ -1,11 +1,18 @@
-<br><br>
+<br></br>
 <div class="col-md-4 col-sm-6 col-xs-12">
-   <div class="text-center">
+   <div class="text-center"><br></br>
      <img src="<%= current_user.profile_photo %>" class="avatar img-circle img-thumbnail" alt="avatar" style="height:40vh">
      <h3><%= current_user.first_name %></h3>
    </div>
  </div>
- <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-   <h3>All my listings</h3>
+ <div class="col-md-6 col-sm-6 col-xs-12 personal-info">
+   <h3>My listings</h3>
    <br>
- </div>
+   <div class='row'>
+     <% @user.listings.each do |listing| %>
+     <div class='col-md-4' id='userlistings'>
+       <img src="<%= listing.image %>" style="height:30vh; width:49vw;">
+   </div>
+ </div><br></br>
+   </div>
+   <% end %>
