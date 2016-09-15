@@ -6,7 +6,7 @@
 <h2>Time to relax and enjoy a peaceful nap</h2>
 <p>See all that San Francisco has to offer for your time of rest</p>
 <br></br>
-<% @listings.in_groups_of(3, false).each do |listing| %>
+<% @listings.order('created_at DESC').in_groups_of(3, false).each do |listing| %>
 <div class='container'>
   <div class='row'>
     <% listing.each do |listing| %>

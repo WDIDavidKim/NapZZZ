@@ -2,8 +2,6 @@
 
 Airbnb style comfort for shorter periods of time.
 
-Things you may want to cover:
-
 #Technologies Used
 
 * Ruby on Rails

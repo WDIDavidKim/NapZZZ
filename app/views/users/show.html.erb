@@ -7,7 +7,7 @@
 <br></br>
 <h2>My listings</h2>
 <br></br>
-<% @user.listings.each do |listing| %>
+<% @user.listings.order('created_at DESC').each do |listing| %>
 <div class='container'>
   <div class='row'>
     <%= link_to listing_path(listing) do %>
