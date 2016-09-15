@@ -22,5 +22,8 @@ $(document).on('turbolinks:load', function() {
   setTimeout(function() {
     $('#flash_messages').slideUp();
   }, 3000);
-  $('#calendar').fullCalendar({});
+  $('#calendar').fullCalendar({
+
+  });
+
 });
