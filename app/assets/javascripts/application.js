@@ -14,9 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require moment
+//= require fullcalendar
+
 
 $(document).on('turbolinks:load', function() {
   setTimeout(function() {
     $('#flash_messages').slideUp();
   }, 3000);
+  $('#calendar').fullCalendar({});
 });
