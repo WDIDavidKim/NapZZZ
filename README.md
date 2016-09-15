@@ -1,6 +1,6 @@
 # Napzzz
 
-Airbnb style comfort for shorter periods of time.
+Airbnb style comfort for shorter periods of time. Users can post listings of their own couches, daybeds, or anything else for other users to nap on.
 
 # Wireframes and ERD
 
