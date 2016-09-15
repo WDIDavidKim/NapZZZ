@@ -7,7 +7,7 @@ class ListingsController < ApplicationController
   end
 
   def show
-    @listing = Listing.find(params[:id])
+    @listing = Listing.find_by_id(params[:listing_id])
   end
 
   def new
@@ -27,12 +27,12 @@ class ListingsController < ApplicationController
   end
 
   def edit
-    @listing = Listing.find(params[:id])
+    @listing = Listing.find_by_id(params[:listing_id])
     auth_fail("edit other user's listing!", @listing) if !auth_route(@listing.user)
   end
 
   def show
-    @listing = Listing.find(params[:id])
+    @listing = Listing.find_by_id(params[:listing_id])
   end
 
   def update
@@ -67,6 +67,6 @@ private
     end
 
     def set_listing
-      @listing = Listing.find(params[:id])
+      @listing = Listing.find_by_id(params[:listing_id])
     end
 end

@@ -1,9 +1,9 @@
 <div class = "col-md-4 col-md-offset-4">
   <div class = "new_form">
-    <%= bootstrap_form_for @reservation do |f| %>
+    <%= bootstrap_form_for [@listing, @reservation], :url => post_reservation_path do |f| %>
       <%= f.date_field :date, placeholder: 'Choose a date' %>
-      <%= f.time_select :start_time, placeholder: 'Start time' %>
-      <%= f.time_select :end_time, placeholder: 'End time' %>
+      <%= f.time_select :start_time, placeholder: 'Check In' %>
+      <%= f.time_select :end_time, placeholder: 'Check Out' %>
       <br>
       <div class=submitandcancelbutton>
       <%= f.submit :class=>"btn btn-success btn-md"%><span></span>
