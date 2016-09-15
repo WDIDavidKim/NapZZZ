@@ -1,24 +1,35 @@
-# README
+# Napzzz
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Airbnb style comfort for shorter periods of time.
 
 Things you may want to cover:
 
-* Ruby version
+#Technologies Used
 
-* System dependencies
+* Ruby on Rails
 
-* Configuration
+* Postgresql
 
-* Database creation
+* Bootstrap
 
-* Database initialization
+* HTML/CSS
 
-* How to run the test suite
+* bCrypt Secure Authorization / Authentication
 
-* Services (job queues, cache servers, search engines, etc.)
+* Javascript & jQuery
 
-* Deployment instructions
+* Upload-Care
 
-* ...
+* Full-Calendar
+
+#Future Features
+
+* Route stored reservation data to push into calendar
+
+* Create Friendly URLs
+
+* Refactor controllers to take advantage of model scope
+
+* Possible e-commerce
+
+* Make mobile friendly
