@@ -2,7 +2,12 @@
 
 Airbnb style comfort for shorter periods of time.
 
-#Technologies Used
+# Wireframes and ERD
+
+![Alt text](http://i.imgur.com/Jiu506z.png)
+
+
+# Technologies Used
 
 * Ruby on Rails
 
@@ -20,7 +25,7 @@ Airbnb style comfort for shorter periods of time.
 
 * Full-Calendar
 
-#Future Features
+# Future Features
 
 * Route stored reservation data to push into calendar
 
