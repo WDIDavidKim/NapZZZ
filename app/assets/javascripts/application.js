@@ -34,22 +34,14 @@ $.getScript('http://arshaw.com/js/fullcalendar-1.6.4/fullcalendar/fullcalendar.m
         },
         editable: true,
         events: [{
-            title: 'All Day Event',
+            title: 'Beginning of the month',
             start: new Date(y, m, 1)
         }, {
             title: 'Long Event',
             start: new Date(y, m, d - 5),
-            end: new Date(y, m, d - 2)
+            end: new Date(y, m, d - 4)
         }, {
-            id: 999,
-            title: 'Repeating Event',
-            start: new Date(y, m, d - 3, 16, 0),
-            allDay: false
-        }, {
-            id: 999,
-            title: 'Repeating Event',
-            start: new Date(y, m, d + 4, 16, 0),
-            allDay: false
+
         }]
     });
 });
