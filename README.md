@@ -4,7 +4,7 @@ Airbnb style comfort for shorter periods of time.
 
 # Wireframes and ERD
 
-![Alt text](http://i.imgur.com/Jiu506z.png)
+![Alt text](http://i.imgur.com/Jiu506z.png1)
 
 
 # Technologies Used
