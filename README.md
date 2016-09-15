@@ -6,6 +6,12 @@ Airbnb style comfort for shorter periods of time.
 
 ![Alt text](http://i.imgur.com/Jiu506z.png1)
 
+![Alt text](http://i.imgur.com/cMLq2on.png?1)
+
+![Alt text](http://i.imgur.com/fEr14rm.png?1)
+
+![Alt text](http://i.imgur.com/GMX4oc9.png?1)
+
 
 # Technologies Used
 
