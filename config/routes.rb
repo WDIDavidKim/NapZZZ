@@ -24,5 +24,7 @@ Rails.application.routes.draw do
   post "/listings/:listing_id/reservations", to: "reservations#create", as: "post_reservation"
   get "/listings/:id/users/:id/reservations/:id", to: "reservations#show", as: "reservation"
 
+
+  get "*path", to: 'users#new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
